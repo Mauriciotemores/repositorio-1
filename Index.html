@@ -4,31 +4,122 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mauricio Temores Chavez - Curriculum</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 1em;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .menu-toggle {
+            font-size: 1.5em;
+            cursor: pointer;
+            color: white;
+            display: none;
+        }
+
+        .menu {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 1em;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .menu {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                background-color: #333;
+                position: absolute;
+                top: 60px;
+                left: 0;
+                z-index: 1000;
+            }
+
+            .menu.active {
+                display: flex;
+            }
+
+            .menu li {
+                text-align: center;
+                margin: 0;
+                padding: 1em 0;
+                border-top: 1px solid #444;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body>
+    <nav>
+        <span class="menu-toggle" onclick="toggleMenu()">☰</span>
+        <ul class="menu" id="menu">
+            <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/Index.html">html</a></li>
+            <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/contacto.html">Contacto</a></li>
+            <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/personaje.html">Personaje</a></li>
+        </ul>
+    </nav>
+
     <h1>Mauricio Temores Chavez</h1>
     <p>Estudiante Ingenieria Informatica</p>
 
-    <section class="yo">
-    <h2>Sobre mi</h2>
-    <p>Soy Mauricio tengo 22 anos estudiante de ingenieria informatica, me encuentro en el sexto semestre,
-       naci el 16 de septiembre de 2002 en Guadalajara, Jalisco, Mexico. 
-    </p>
+    <section id="yo">
+        <h2>Sobre mí</h2>
+        <p>Soy Mauricio tengo 22 años estudiante de ingeniería informática, me encuentro en el sexto semestre,
+           nací el 16 de septiembre de 2002 en Guadalajara, Jalisco, México. 
+        </p>
     </section>
 
-    <section class="habilidades">
+    <section id="habilidades">
         <h2>Mis habilidades</h2>
-        <li>Pramacion c++</li>
-        <li>Programacion python</li>
-        <li>Administracion de bases de datos</li>
-        <li>Creacion paginas web con html5</li>
+        <ul>
+            <li>Programación en C++</li>
+            <li>Programación en Python</li>
+            <li>Administración de bases de datos</li>
+            <li>Creación de páginas web con HTML5</li>
+        </ul>
     </section>
 
-    <section class="pasatiempos">
+    <section id="pasatiempos">
         <h3>Mis pasatiempos</h3>
-        <li>Jugar videojuegos</li>
-        <li>Leer libros de fantasia y misterio</li>
-        <li>El futbol</li>
+        <ul>
+            <li>Jugar videojuegos</li>
+            <li>Leer libros de fantasía y misterio</li>
+            <li>El fútbol</li>
+        </ul>
     </section>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
+    <p>© 2024 Página creada por Mauricio Temores Chavez</p>
 </body>
-</html>
+</html>    
