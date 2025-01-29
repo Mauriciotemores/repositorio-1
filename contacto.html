@@ -1,4 +1,4 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="es">
 <head> 
     <meta charset="UTF-8">
@@ -33,6 +33,18 @@
             <input type="email" class="form-control" id="correo" name="correo" placeholder="Ingresa tu correo" required>
             <div class="invalid-feedback">Por favor ingresa un correo válido.</div>
         </div>
+
+        <!-- Campo Clasificación -->
+        <div class="col-md-6 mx-auto">
+            <label for="clasificacion" class="form-label">Clasificación:</label>
+            <select class="form-select" id="clasificacion" name="clasificacion" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="contratacion">Contratación</option>
+                <option value="personal">Personal</option>
+                <option value="otro">Otro</option>
+            </select>
+            <div class="invalid-feedback">Por favor selecciona una clasificación.</div>
+        </div>
         
         <!-- Campo Mensaje -->
         <div class="col-md-6 mx-auto">
@@ -63,8 +75,9 @@
             });
         })();
     </script>
+
     <footer class="text-center mt-5">
-    <p>© 2024 Página creada por Mauricio Temores Chavez</p>
+        <p>© 2024 Página creada por Mauricio Temores Chavez</p>
     </footer>
 </body>
 </html>
