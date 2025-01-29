@@ -1,0 +1,46 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.persona-admiro {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.persona-admiro h1 {
+    color: #2c3e50;
+    font-style: italic;
+}
+
+.persona-admiro .content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.persona-admiro img {
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    font-style: italic;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    margin-top: 30px;
+}
