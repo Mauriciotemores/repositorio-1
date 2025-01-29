@@ -8,6 +8,8 @@
         body {
             font-family: Arial, sans-serif;
             margin: 0;
+            padding: 0;
+            line-height: 1.6;
         }
 
         nav {
@@ -73,46 +75,70 @@
                 display: block;
             }
         }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            margin-bottom: 20px;
+            padding: 15px;
+            border-radius: 5px;
+            background: #f4f4f4;
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #333;
+            color: white;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
     <nav>
         <span class="menu-toggle" onclick="toggleMenu()">☰</span>
         <ul class="menu" id="menu">
-            <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/Index.html">html</a></li>
+            <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/Index.html">Index</a></li>
             <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/contacto.html">Contacto</a></li>
             <li><a href="file:///C:/Users/tekie/Desktop/Programacion%20para%20internet/personaje.html">Personaje</a></li>
         </ul>
     </nav>
 
-    <h1>Mauricio Temores Chavez</h1>
-    <p>Estudiante Ingenieria Informatica</p>
+    <div class="container">
+        <h1>Mauricio Temores Chavez</h1>
+        <p><strong>Estudiante de Ingeniería Informática</strong></p>
 
-    <section id="yo">
-        <h2>Sobre mí</h2>
-        <p>Soy Mauricio tengo 22 años estudiante de ingeniería informática, me encuentro en el sexto semestre,
-           nací el 16 de septiembre de 2002 en Guadalajara, Jalisco, México. 
-        </p>
-    </section>
-
-    <section id="habilidades">
-        <h2>Mis habilidades</h2>
-        <ul>
-            <li>Programación en C++</li>
-            <li>Programación en Python</li>
-            <li>Administración de bases de datos</li>
-            <li>Creación de páginas web con HTML5</li>
-        </ul>
-    </section>
-
-    <section id="pasatiempos">
-        <h3>Mis pasatiempos</h3>
-        <ul>
-            <li>Jugar videojuegos</li>
-            <li>Leer libros de fantasía y misterio</li>
-            <li>El fútbol</li>
-        </ul>
-    </section>
+        <!-- Sección Sobre mí -->
+        <section id="yo">
+            <h2>Sobre mí</h2>
+            <p>Soy Mauricio, tengo 22 años y soy estudiante de Ingeniería Informática. Actualmente, me encuentro en el sexto semestre. Nací el 16 de septiembre de 2002 en Guadalajara, Jalisco, México.</p>
+        </section>
+        
+        <!-- Sección Habilidades -->
+        <section id="habilidades">
+            <h2>Mis habilidades</h2>
+            <ul>
+                <li>Programación en C++</li>
+                <li>Programación en Python</li>
+                <li>Administración de bases de datos</li>
+                <li>Creación de páginas web con HTML5</li>
+            </ul>
+        </section>
+        
+        <!-- Sección Pasatiempos -->
+        <section id="pasatiempos">
+            <h3>Mis pasatiempos</h3>
+            <ul>
+                <li>Jugar videojuegos</li>
+                <li>Leer libros de fantasía y misterio</li>
+                <li>El fútbol</li>
+            </ul>
+        </section>
+    </div>
 
     <script>
         function toggleMenu() {
@@ -120,6 +146,9 @@
             menu.classList.toggle('active');
         }
     </script>
-    <p>© 2024 Página creada por Mauricio Temores Chavez</p>
+    
+    <footer>
+        <p>© 2024 Página creada por Mauricio Temores Chavez</p>
+    </footer>
 </body>
-</html>    
+</html>
